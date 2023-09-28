@@ -1,4 +1,10 @@
 #!/bin/bash
-file -m school.mgc my_school_data
 
+# Loop through files in the current directory
+for file in *; do
+    # Use the 'file' command to determine the file type
+    file_type=$(file -b --mime-type "$file")
 
+    # Print the filename and its MIME type
+    echo "$file: $file_type"
+done
