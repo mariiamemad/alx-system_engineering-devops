@@ -1,1 +1,3 @@
-alx r 
+#!/bin/bash
+ll
+
